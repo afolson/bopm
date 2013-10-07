@@ -109,20 +109,8 @@ BOPM to reopen those files.
 Support
 -------
 
-BOPM has a mailing list for general discussion and announcements.  CVS
-commit emails are also sent there and that is also the place to mail your
-patches (unless they are massive, in which case just post a URL).  You can
-subscribe to this list from:
-
-  http://lists.blitzed.org/listinfo/bopm
-
-Also check if your question is answered on the BOPM FAQ:
-
-  http://blitzed.org/bopm/faq.phtml
-
-No IRC support currently exists for BOPM.  If you would like to run such a
-support channel, please let us know so that we can list it here.
-
+This project was seemingly dropped. For support please consult the plethora
+of documentation found online.
 
 Compatibility Notes
 -------------------
