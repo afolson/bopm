@@ -190,6 +190,15 @@ IRC {
 
 	/* Hybrid / Bahamut / Unreal (in HCN mode) */
 	connregex = "\\*\\*\\* Notice -- Client connecting: ([^ ]+) \\(([^@]+)@([^\\)]+)\\) \\[([0-9\\.]+)\\].*";
+	
+	/* Hybrid / Bahamut / Unreal (in HCN mode) connregex to scan ALL connections, not just local
+	 * This is intended for networks that want to run BOPMs on each leaf server and have a single server do 
+	 * lookups. You are not advised to run a single BOPM on a multi-server network as a netsplit could leave 
+	 * several servers unprotected. Several BOPMs running with this connregex is also bad as you also run the 
+	 * risk of performing scans and lookups several times for each connection. Many blacklists will ban you 
+	 * for this and users may be irritated by excessive port scanning.
+	 */
+#	connregex = "\\*\\*\\* Notice -- Client connecting.*: ([^ ]+) \\(([^@]+)@([^\\)]+)\\) \\[([0-9\\.]+)\\].*";
 
 	/*
 	 * Ultimate ircd  - note the control-B characters around Connect/Exit,
